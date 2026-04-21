@@ -1,0 +1,106 @@
+プログラミング
+アルゴリズム(処理手順)、データ(処理対象)
+
+１：ソースコード(機械への命令の内容を人が理解できる文字列で記載したもの)作成
+２：コンパイル(人の言語からコンピュータ語に翻訳)
+３：処理実行
+
+ソースコードのエラー：バグ
+バグを修正：デバッグ
+
+
+Javaのコンパイルに少し手間取った 
+vscodeのターミナルはjavac非対応？コマンドプロンプトではOK
+
+Sample1_03_2.javaに意図的に入っていた全角スペースでエラー
+
+
+C:\sadopj_workspace\java\WorkSpace\サンプルソースコード>javac Sample1_03_1.java
+
+C:\sadopj_workspace\java\WorkSpace\サンプルソースコード>java Sample1_03_1
+HelloWorld!!
+C:\Users\seina_miura>cd C:\sadopj_workspace\java\WorkSpace\サンプルソースコード
+
+C:\sadopj_workspace\java\WorkSpace\サンプルソースコード>javac Sample1_03_1.java
+
+C:\sadopj_workspace\java\WorkSpace\サンプルソースコード>java Sample1_03_1
+HelloWorld!!
+
+
+
+実践：Ex1_03_1.javaで自分の名前を表示
+
+C:\sadopj_workspace\java\WorkSpace\サンプルソースコード>cd C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード
+
+C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード>javac Ex1_03_1.java
+
+C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード>java Ex1_03_1.java
+三浦 靖奈
+
+
+実践：Ex1_03_2.javaでエラーを探してデバック
+
+C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード>javac Ex1_03_2.java
+Ex1_03_2.java:4: エラー: ';'がありません
+                System.out.println("Hello World!! Error is cleared!!")
+                                                                      ^
+エラー1個
+
+C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード>javac Ex1_03_2.java
+
+C:\sadopj_workspace\java\WorkSpace\J1-03_Javaプログラミングの手順\演習用ソースコード>java Ex1_03_2.java
+Hello World!! Error is cleared!!
+
+
+小テスト間違い
+
+デバッグは通常、コンパイルの後に行われます。ソースコードにあるエラーは、コンパイル時に発見されることが多いので、
+デバッグはそのエラーに対応するための作業なのです。したがって、デバッグをコンパイルの前に行うという考え方は誤りです。
+この誤解は、デバッグの流れや役割を理解する際に一般的に見られるものです。
+
+Javaプログラムを実行する際には、コンパイルされたバイトコードファイルを指定し、この時点で拡張子は必要ありません
+
+javacコマンドは、Javaのソースコードファイルをコンパイルしてバイトコードファイルを生成するために使いますが、
+そのバイトコードファイルを実行するためにはjavaコマンドを使用します
+
+avaプログラムを実行する際、コマンドプロンプトで指定するファイル名に拡張子は不要で、
+コンパイルされたバイトコードファイルを実行するにはファイル名のみを入力します
+
+System.out.printlnはJavaで出力を行う一般的な方法の一つですが、Javaでは他にも出力方法が存在します。
+例えば、System.out.printやSystem.out.printfなどのメソッドを使用することができます。また、GUIを利用したアプリケーションでは、
+テキストエリアやラベルに文字を表示することも可能です。
+このように、出力処理は多様な方法で行うことができるため、System.out.printlnを必ず使用しなければならないわけではありません
+
+
+デバッグは、プログラムの論理的な誤りを修正するだけでなく、
+文法的な誤りや実行時エラーなど、プログラムの正常な動作を妨げる様々な問題を特定して修正する作業です
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
